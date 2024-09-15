@@ -23,14 +23,14 @@
 
     <br>
     <label for="weight">Weight:</label>
-    <input type="text" id="weight" name="weight">
+    <input type="number" id="weight" name="weight">
     <br>
     <label for="reps">Reps:</label>
-    <input type="text" id="reps" name="reps">
+    <input type="number" id="reps" name="reps">
 
     <p>
         <a href="ex2.html">
-            <button>Next</button>
+            <button onclick="save()">Next</button>
         </a>
     </p>
     <p>
@@ -38,6 +38,10 @@
             <button>Previous</button>
         </a>
     </p>
+    <script>
+        var nr_ex = 1;
+    </script>
+    <script src="/JSs/exercise.js"></script>
 </body>
 
 </html>
