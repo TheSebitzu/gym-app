@@ -1,18 +1,35 @@
 let pushed = localStorage.pushed;
 let workouts = JSON.parse(localStorage.workouts);
 
-document.getElementById("wkname").innerHTML = pushed;
+if (pushed === "push1"){
+    document.getElementById("wkname").innerHTML = "Push 1 history";
+}
+if (pushed === "pull1"){
+    document.getElementById("wkname").innerHTML = "Pull 1 history";
+}
+if (pushed === "legs1"){
+    document.getElementById("wkname").innerHTML = "Legs 1 history";
+}
+if (pushed === "push2"){
+    document.getElementById("wkname").innerHTML = "Push 2 history";
+}
+if (pushed === "pull2"){
+    document.getElementById("wkname").innerHTML = "Pull 2 history";
+}
+if (pushed === "legs2"){
+    document.getElementById("wkname").innerHTML = "Legs 2 history";
+}
+
 
 const historyDiv = document.getElementById("history");
 
 for (let i = 0; i < workouts[pushed].length; i++) {
     const exercise = workouts[pushed][i];
     console.log(exercise);
-    console.log(exercise.length);
 
     // Create a heading for the table number
-    const heading = document.createElement("h3");
-    heading.textContent = `Table ${i + 1}`;
+    const heading = document.createElement("h5");
+    heading.textContent = `${exercise.date}`;
     historyDiv.appendChild(heading);
 
     // Create a new table for each exercise
