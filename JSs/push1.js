@@ -1,48 +1,51 @@
-const today = new Date();
+function start() {
 
-const day = today.getDate();
-const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-const month = monthNames[today.getMonth()];
-const year = today.getFullYear();
+    const today = new Date();
 
-
-let push1day = {
-    "date": day + " " + month + " " + year,
-    "ex1": {
-        "kg": 0,
-        "reps": 0
-    },
-    "ex2": {
-        "kg": 0,
-        "reps": 0
-    },
-    "ex3": {
-        "kg": 0,
-        "reps": 0
-    },
-    "ex4": {
-        "kg": 0,
-        "reps": 0
-    },
-    "ex5": {
-        "kg": 0,
-        "reps": 0
-    },
-    "ex6": {
-        "kg": 0,
-        "reps": 0
-    },
-    "ex7": {
-        "kg": 0,
-        "reps": 0
-    }
-
-};
+    const day = today.getDate();
+    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const month = monthNames[today.getMonth()];
+    const year = today.getFullYear();
 
 
+    let push1day = {
+        "date": day + " " + month + " " + year,
+        "ex1": {
+            "kg": 0,
+            "reps": 0
+        },
+        "ex2": {
+            "kg": 0,
+            "reps": 0
+        },
+        "ex3": {
+            "kg": 0,
+            "reps": 0
+        },
+        "ex4": {
+            "kg": 0,
+            "reps": 0
+        },
+        "ex5": {
+            "kg": 0,
+            "reps": 0
+        },
+        "ex6": {
+            "kg": 0,
+            "reps": 0
+        },
+        "ex7": {
+            "kg": 0,
+            "reps": 0
+        }
 
-let workouts = JSON.parse(localStorage.workouts);
-workouts.push1.push(push1day);
-localStorage.workouts = JSON.stringify(workouts);
+    };
 
-// console.log(localStorage.workouts);
+
+
+    let workouts = JSON.parse(localStorage.workouts);
+    workouts.push1.push(push1day);
+    localStorage.workouts = JSON.stringify(workouts);
+
+    // console.log(localStorage.workouts);
+}
