@@ -1,0 +1,66 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15vw;
+    /* Keep base font size */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vw;
+    /* Keep content text size */
+}
+
+#button {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#button button {
+    font-size: 10vw;
+    /* Keep button text size */
+    padding: 3vh 6vw;
+    /* Keep padding */
+}
+
+/* Media queries for different screen sizes */
+@media (min-width: 768px) {
+
+    body,
+    html {
+        font-size: 8vw;
+        /* Adjust base font size for larger screens */
+    }
+
+    .content {
+        font-size: 4vw;
+        /* Adjust content text size for larger screens */
+    }
+
+    #button button {
+        font-size: 5vw;
+        /* Adjust button text size for larger screens */
+        padding: 2vh 4vw;
+        /* Adjust padding for larger screens */
+    }
+}
