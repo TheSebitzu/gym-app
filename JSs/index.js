@@ -12,7 +12,7 @@ function reset() {
         "legs1": [],
         "legs2": []
     };
-
+    localStorage.clear();
     localStorage.workouts = JSON.stringify(workouts);
     console.log(localStorage.workouts);
 };

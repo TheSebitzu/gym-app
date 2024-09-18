@@ -39,8 +39,10 @@ let push1day = {
 
 };
 
+
+
 let workouts = JSON.parse(localStorage.workouts);
 workouts.push1.push(push1day);
 localStorage.workouts = JSON.stringify(workouts);
 
-console.log(localStorage.workouts);
+// console.log(localStorage.workouts);

@@ -36,7 +36,7 @@ let legs1day = {
         "kg": 0,
         "reps": 0
     }
-    
+
 };
 
 
@@ -44,4 +44,4 @@ let workouts = JSON.parse(localStorage.workouts);
 workouts.legs1.push(legs1day);
 localStorage.workouts = JSON.stringify(workouts);
 
-console.log(localStorage.workouts);
+// console.log(localStorage.workouts);

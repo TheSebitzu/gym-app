@@ -1,29 +1,29 @@
 let pushed = localStorage.pushed;
 let workouts = JSON.parse(localStorage.workouts);
 
-if (pushed === "push1"){
+if (pushed === "push1") {
     document.getElementById("wkname").innerHTML = "Push 1 history";
 }
-if (pushed === "pull1"){
+if (pushed === "pull1") {
     document.getElementById("wkname").innerHTML = "Pull 1 history";
 }
-if (pushed === "legs1"){
+if (pushed === "legs1") {
     document.getElementById("wkname").innerHTML = "Legs 1 history";
 }
-if (pushed === "push2"){
+if (pushed === "push2") {
     document.getElementById("wkname").innerHTML = "Push 2 history";
 }
-if (pushed === "pull2"){
+if (pushed === "pull2") {
     document.getElementById("wkname").innerHTML = "Pull 2 history";
 }
-if (pushed === "legs2"){
+if (pushed === "legs2") {
     document.getElementById("wkname").innerHTML = "Legs 2 history";
 }
 
 
 const historyDiv = document.getElementById("history");
 
-for (let i = 0; i < workouts[pushed].length; i++) {
+for (let i = workouts[pushed].length - 1; i >= 0; i--) {
     const exercise = workouts[pushed][i];
     console.log(exercise);
 
