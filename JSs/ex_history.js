@@ -72,7 +72,7 @@ const exerciseNameMapping = {
 };
 
 const historyDiv = document.getElementById("history");
-
+console.log(workouts[pushed]);
 for (let i = workouts[pushed].length - 1; i >= 0; i--) {
     const exercise = workouts[pushed][i];
     console.log(exercise);

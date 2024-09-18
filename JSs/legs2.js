@@ -36,6 +36,10 @@ function start() {
         "ex7": {
             "kg": 0,
             "reps": 0
+        },
+        "ex8": {
+            "kg": 0,
+            "reps": 0
         }
 
     };
