@@ -48,5 +48,4 @@ function start() {
     workouts.legs2.push(legs2day);
     localStorage.workouts = JSON.stringify(workouts);
 
-    // console.log(localStorage.workouts);
 }

@@ -72,20 +72,15 @@ const exerciseNameMapping = {
 };
 
 const historyDiv = document.getElementById("history");
-console.log(workouts[pushed]);
 for (let i = workouts[pushed].length - 1; i >= 0; i--) {
     const exercise = workouts[pushed][i];
-    console.log(exercise);
 
-    // Create a heading for the table number
     const heading = document.createElement("h5");
     heading.textContent = `${exercise.date}`;
     historyDiv.appendChild(heading);
 
-    // Create a new table for each exercise
     const table = document.createElement("table");
 
-    // Create a header row
     const header = table.createTHead();
     const headerRow = header.insertRow(0);
     const exerciseHeader = headerRow.insertCell(0);
@@ -95,7 +90,6 @@ for (let i = workouts[pushed].length - 1; i >= 0; i--) {
     weightHeader.innerHTML = "<b>Weight (kg)</b>";
     repsHeader.innerHTML = "<b>Reps</b>";
 
-    // Create a body for the table
     const tableBody = table.createTBody();
 
     for (const [exerciseName, details] of Object.entries(exercise)) {
@@ -119,6 +113,5 @@ for (let i = workouts[pushed].length - 1; i >= 0; i--) {
         tableBody.appendChild(row);
     }
 
-    // Append the table to the history div
     historyDiv.appendChild(table);
 }

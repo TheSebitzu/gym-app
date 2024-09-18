@@ -22,12 +22,10 @@ if (localStorage.getItem(keyMaxReps) === null) {
 
 function save() {
     let workouts = JSON.parse(localStorage.workouts);
-    let ex = workouts[worknum].at(-1)["ex" + nr_ex]; //workouts.push1[last].ex1
+    let ex = workouts[worknum].at(-1)["ex" + nr_ex];
     ex.kg = inputkg.value;
     ex.reps = inputreps.value;
 
-    console.log(localStorage.getItem(keyMaxKg));
-    console.log(localStorage.getItem(keyMaxReps));
 
     if (ex.kg === localStorage.getItem(keyMaxKg) && ex.reps > localStorage.getItem(keyMaxReps)) {
         localStorage.setItem(keyMaxReps, ex.reps);
@@ -36,9 +34,6 @@ function save() {
         localStorage.setItem(keyMaxReps, ex.reps);
         localStorage.setItem(keyMaxKg, ex.kg);
     }
-
-    console.log(localStorage.getItem(keyMaxKg));
-    console.log(localStorage.getItem(keyMaxReps));
 
     localStorage.workouts = JSON.stringify(workouts);
 

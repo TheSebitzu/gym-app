@@ -14,7 +14,6 @@ function reset() {
     };
     localStorage.clear();
     localStorage.workouts = JSON.stringify(workouts);
-    console.log(localStorage.workouts);
 };
 
 
