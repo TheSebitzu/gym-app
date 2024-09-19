@@ -43,6 +43,7 @@ p {
 .bottom-buttons a,
 .bottom-buttons button {
     width: 45%;
+    height: 50px; /* Set a fixed height for both buttons */
     margin: 0;
     text-align: center;
     padding: 10px;
