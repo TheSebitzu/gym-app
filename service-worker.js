@@ -100,7 +100,7 @@ self.addEventListener('install', event => {
           './HTMLs/workouts/push2/exercises/ex7.html',
           './HTMLs/workouts/push2/warmup/warmup1.html',
           './HTMLs/workouts/push2/warmup/warmup2.html',
-          './HTMLs/workouts/push2/warmup/warmup3.html',
+          './HTMLs/workouts/push2/warmup/warmup3.html'
         ]);
       })
     );
