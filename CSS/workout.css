@@ -1,5 +1,5 @@
 body {
-    font-family: 'Comic Sans MS', cursive, sans-serif;  
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;  
     margin: 0;
     padding: 0;
     background-color: #121212;
@@ -17,6 +17,7 @@ body {
     justify-content: center; 
     align-items: center;
     flex-grow: 1;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;  
 }
 
 button {
@@ -32,7 +33,7 @@ button {
     font-size: 1.5rem;  
     cursor: pointer;
     margin-top: 20px;
-    font-family: 'Comic Sans MS', cursive, sans-serif;  
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;  
 }
 
 button:hover {
@@ -44,6 +45,7 @@ button:hover {
     height: 40px;  
     font-size: 1rem;  
     margin: 10px;  
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;  
 }
 
 .bottom-buttons {
@@ -55,10 +57,11 @@ button:hover {
     width: 100%;
     background-color: #121212;
     padding: 10px 0;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;  
 }
 
 p {
     margin: 20px 0;
     text-align: center;
-    font-family: 'Comic Sans MS', cursive, sans-serif;  
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;  
 }
