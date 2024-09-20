@@ -1,5 +1,8 @@
+* {
+    text-decoration: none;
+}
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; 
     margin: 0;
     padding: 0;
     background-color: #121212; 
@@ -32,7 +35,6 @@ body {
     border-radius: 5px;
     text-align: center; 
     cursor: pointer;
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
 .home-button:hover {
@@ -108,7 +110,6 @@ button {
     font-size: 2rem; 
     cursor: pointer;
     margin-top: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
 button:hover {
@@ -132,7 +133,6 @@ button:hover {
     justify-content: center; 
     align-items: center; 
     text-decoration: none; 
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
 .bottom-buttons a button:hover,
@@ -143,7 +143,6 @@ button:hover {
 p {
     margin: 20px 0;
     text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
 .center-buttons {
@@ -160,7 +159,6 @@ p {
     margin: 10px 0; 
     font-size: 2rem; 
     text-decoration: none; 
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
 .bottom-buttons {
@@ -172,4 +170,8 @@ p {
     width: 100%;
     background-color: #121212;
     padding: 10px 0;
+}
+
+input[type="number"] {
+    font-size: 20px; /* Adjust the size as needed */
 }

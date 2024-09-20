@@ -1,5 +1,8 @@
+* {
+    text-decoration: none;
+}
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; 
     margin: 0;
     padding: 0;
     background-color: #121212; 
@@ -15,7 +18,6 @@ body {
     font-size: 2.5rem; 
     text-align: center;
     margin: 20px 0;
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
 #wkname {
@@ -23,7 +25,6 @@ body {
     font-size: 2rem; 
     margin: 10px 0; 
     color: #e0e0e0; 
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
 #history {
@@ -33,7 +34,6 @@ body {
     flex-direction: column;
     align-items: center;
     overflow-x: auto; 
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
 table {
@@ -44,7 +44,6 @@ table {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
 table th,
@@ -52,14 +51,12 @@ table td {
     padding: 12px 15px;
     text-align: left;
     white-space: nowrap; 
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
 table th {
     background-color: #1e88e5; 
     color: #ffffff;
     font-weight: bold;
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
 table tr:nth-child(even) {
@@ -78,7 +75,6 @@ h5 {
     margin-top: 20px;
     color: #1e88e5; 
     font-size: 1.5rem; 
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
 button {
@@ -93,7 +89,6 @@ button {
     font-size: 2rem; 
     cursor: pointer;
     margin-top: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
 button:hover {
@@ -117,7 +112,6 @@ button:hover {
     justify-content: center; 
     align-items: center;
     text-decoration: none; 
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
 .bottom-buttons a button:hover,
@@ -128,7 +122,6 @@ button:hover {
 p {
     margin: 20px 0;
     text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
 .center-buttons {
@@ -137,7 +130,6 @@ p {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
 .center-buttons a {
@@ -146,7 +138,6 @@ p {
     margin: 10px 0; 
     font-size: 2rem; 
     text-decoration: none; 
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
 .bottom-buttons {
@@ -158,7 +149,6 @@ p {
     width: 100%;
     background-color: #121212;
     padding: 10px 0;
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
 .action-button {
@@ -174,5 +164,4 @@ p {
     font-size: 1.5rem; 
     cursor: pointer;
     margin-top: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }

@@ -1,3 +1,7 @@
+* {
+    text-decoration: none;
+}
+
 body,
 html {
     height: 100%;
@@ -7,7 +11,10 @@ html {
     align-items: center;
     text-align: center;
     font-size: 15vw;
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #121212; 
+    color: #e0e0e0; 
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
@@ -17,7 +24,12 @@ html {
     align-items: center;
     height: 100%;
     width: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: auto;
+    text-align: center;
+}
+
+.container p {
+    margin: 10px 0; 
 }
 
 .content {
@@ -26,7 +38,41 @@ html {
     justify-content: center;
     align-items: center;
     font-size: 6vw;
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p {
+    margin: 20px 0;
+    text-align: center;
+}
+
+p:first-of-type {
+    font-size: 1.5rem; 
+}
+
+video {
+    display: block;
+    margin: 20px auto;
+    max-width: 90%; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 10px auto; 
+    padding: 10px;
+    background-color: #1e88e5; 
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2rem; 
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1565c0; 
 }
 
 #button {
@@ -40,25 +86,14 @@ html {
 #button button {
     font-size: 10vw;
     padding: 3vh 6vw;
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
+input {
+    background-color: #333333; 
+    color: #e0e0e0; 
+    border: 1px solid #444444; 
+    padding: 10px;
     border-radius: 5px;
-    text-align: center;
-    font-size: 1.5rem;
-    cursor: pointer;
-    margin-top: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-button:hover {
-    background-color: #0056b3;
 }
 
 @media (min-width: 768px) {
