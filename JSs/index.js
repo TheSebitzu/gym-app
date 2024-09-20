@@ -4,6 +4,7 @@ if (localStorage.workouts === undefined) {
 
 
 function reset() {
+    localStorage.clear();
     let workouts = {
         "push1": [],
         "push2": [],
@@ -12,8 +13,8 @@ function reset() {
         "legs1": [],
         "legs2": []
     };
-    localStorage.clear();
     localStorage.workouts = JSON.stringify(workouts);
+    console.log("SALUT SIMPLU");
 };
 
 

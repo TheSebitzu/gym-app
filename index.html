@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <p id="salut"></p>
 
     <div class="center-buttons">
         <a href="./HTMLs/workout.html">
@@ -20,7 +21,6 @@
             <button>Previous Workouts</button>
         </a>
     </div>
-    <p id="salut"></p>
 
     <div class="bottom-buttons">
         <a href="https://your-donation-link.com" style="text-decoration: none;">
@@ -44,6 +44,17 @@
               console.log('Service Worker registration failed:', error);
             });
         }
+        window.onload = function() {
+            const message = localStorage.getItem('resetMessage');
+            if (message) {
+                const salutElement = document.getElementById('salut');
+                salutElement.textContent = message;
+                setTimeout(function() {
+                    salutElement.textContent = '';
+                    localStorage.removeItem('resetMessage');
+                }, 3000); // milliseconds
+            }
+        };
     </script>
 </body>
 

@@ -13,7 +13,7 @@
 <body>
 
     <a>
-        <button onclick="reset()">
+        <button onclick="resetAndRedirect()">
             Yes
         </button>
     </a>
@@ -21,15 +21,16 @@
         <button>No</button>
     </a>
 
-    <script src="../JSs/index.js"></script>
     <script>    
         function resetAndRedirect() {
             reset();
+            localStorage.setItem('resetMessage', 'localStorage reset');
             setTimeout(function() {
-                window.location.href = '/index.html';
-            }, 3000); // milliseconds
+                window.location.href = '../index.html';
+            }, 1000); // 1000 milliseconds = 1 second
         }
     </script>
+    <script src="../JSs/index.js"></script>
     
 </body>
 
