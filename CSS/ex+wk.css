@@ -1,19 +1,28 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: #121212; 
+    color: #e0e0e0; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 p {
-    margin: 20px;
-    color: #343a40;
+    margin: 20px 0;
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+}
+
+p:first-of-type {
+    font-size: 1.5rem; 
 }
 
 video {
     display: block;
     margin: 20px auto;
-    max-width: 100%;
+    max-width: 90%; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -21,17 +30,36 @@ video {
 button {
     display: block;
     width: calc(100% - 40px);
-    margin: 20px auto;
+    margin: 10px auto; 
     padding: 10px;
-    background-color: #007bff;
+    background-color: #1e88e5; 
     color: #ffffff;
     border: none;
     border-radius: 5px;
     text-align: center;
-    font-size: 1rem;
+    font-size: 2rem; 
     cursor: pointer;
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #1565c0; 
+}
+
+.container {
+    margin-top: auto;
+    text-align: center;
+}
+
+.container p {
+    margin: 10px 0; 
+}
+
+input {
+    background-color: #333333; 
+    color: #e0e0e0; 
+    border: 1px solid #444444; 
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
 }

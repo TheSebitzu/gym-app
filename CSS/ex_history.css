@@ -1,26 +1,65 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: #121212; 
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.top-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    padding: 10px;
+    background-color: #121212;
+    position: absolute; 
+    top: 0;
+}
+
+.home-button {
+    width: 150px; 
+    height: 40px; 
+    font-size: 1rem; 
+    margin: 10px; 
+    background-color: #1e88e5; 
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    text-align: center; 
+    cursor: pointer;
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+}
+
+.home-button:hover {
+    background-color: #1565c0; 
 }
 
 #wkname {
     text-align: center;
-    font-size: 1.5rem;
-    margin: 20px 0;
-    color: #343a40;
+    font-size: 2rem; 
+    margin: 10px 0; 
+    color: #e0e0e0; 
 }
 
 #history {
     padding: 20px;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: auto; 
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
-    background-color: #ffffff;
+    background-color: #1e1e1e; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
@@ -30,46 +69,107 @@ table th,
 table td {
     padding: 12px 15px;
     text-align: left;
+    white-space: nowrap; 
 }
 
 table th {
-    background-color: #007bff;
+    background-color: #1e88e5; 
     color: #ffffff;
     font-weight: bold;
 }
 
 table tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #2c2c2c; 
 }
 
 table tr:hover {
-    background-color: #e9ecef;
+    background-color: #3a3a3a; 
 }
 
 table td {
-    border-bottom: 1px solid #dee2e6;
+    border-bottom: 1px solid #343a40; 
 }
 
 h5 {
     margin-top: 20px;
-    color: #007bff;
-    font-size: 1.25rem;
+    color: #1e88e5;
+    font-size: 1.5rem; 
 }
 
 button {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #1e88e5; 
     color: #ffffff;
     border: none;
     border-radius: 5px;
     text-align: center;
-    font-size: 1rem;
+    font-size: 2rem; 
     cursor: pointer;
     margin-top: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #1565c0; 
+}
+
+.bottom-buttons a,
+.bottom-buttons button {
+    width: 40%; 
+    height: 40px; 
+    margin: 0 10px; 
+    text-align: center; 
+    padding: 5px; 
+    background-color: #1e88e5; 
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem; 
+    cursor: pointer;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-decoration: none; 
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+}
+
+.bottom-buttons a button:hover,
+.bottom-buttons button:hover {
+    background-color: #1565c0;
+}
+
+p {
+    margin: 20px 0;
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+}
+
+.center-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.center-buttons a {
+    width: 300px; 
+    height: 100px; 
+    margin: 10px 0; 
+    font-size: 2rem; 
+    text-decoration: none; 
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+}
+
+.bottom-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #121212;
+    padding: 10px 0;
 }

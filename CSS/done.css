@@ -7,7 +7,6 @@ html {
     align-items: center;
     text-align: center;
     font-size: 15vw;
-    /* Keep base font size */
 }
 
 .container {
@@ -25,7 +24,6 @@ html {
     justify-content: center;
     align-items: center;
     font-size: 6vw;
-    /* Keep content text size */
 }
 
 #button {
@@ -38,23 +36,18 @@ html {
 
 #button button {
     font-size: 10vw;
-    /* Keep button text size */
     padding: 3vh 6vw;
-    /* Keep padding */
 }
 
-/* New button styles */
 button {
     display: inline-block;
     padding: 15px 30px;
-    /* Increased padding */
     background-color: #007bff;
     color: #ffffff;
     border: none;
     border-radius: 5px;
     text-align: center;
     font-size: 1.5rem;
-    /* Increased font size */
     cursor: pointer;
     margin-top: 20px;
 }
@@ -63,24 +56,19 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Media queries for different screen sizes */
 @media (min-width: 768px) {
 
     body,
     html {
         font-size: 8vw;
-        /* Adjust base font size for larger screens */
     }
 
     .content {
         font-size: 4vw;
-        /* Adjust content text size for larger screens */
     }
 
     #button button {
         font-size: 5vw;
-        /* Adjust button text size for larger screens */
         padding: 2vh 4vw;
-        /* Adjust padding for larger screens */
     }
 }
