@@ -5,51 +5,53 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #121212;  
-    color: #e0e0e0;  
+    background-color: #121212;
+    color: #e0e0e0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;  
+    justify-content: space-between;
     align-items: center;
     height: 100vh;
 }
 
 h1 {
-    margin-bottom: 10px;  
+    margin-bottom: 10px;
 }
 
 .center-buttons {
     display: flex;
     flex-direction: column;
-    justify-content: center;  
+    justify-content: center;
     align-items: center;
     flex-grow: 1;
+    gap: 10px; /* Adjust the gap between buttons */
+    padding-bottom: 60px; /* Ensure space for the bottom buttons */
 }
 
 button {
     display: block;
-    width: 300px;  
-    height: 60px;  
+    width: 300px;
+    height: 60px;
     padding: 10px;
-    background-color: #1e88e5;  
+    background-color: #1e88e5;
     color: #ffffff;
     border: none;
     border-radius: 5px;
-    text-align: center; 
-    font-size: 1.5rem;  
+    text-align: center;
+    font-size: 1.5rem;
     cursor: pointer;
     margin-top: 20px;
 }
 
 button:hover {
-    background-color: #1565c0;  
+    background-color: #1565c0;
 }
 
 .home-button {
-    width: 150px;  
-    height: 40px;  
-    font-size: 1rem;  
-    margin: 10px;  
+    width: 150px;
+    height: 40px;
+    font-size: 1rem;
+    margin: 10px;
 }
 
 .bottom-buttons {
@@ -66,4 +68,10 @@ button:hover {
 p {
     margin: 20px 0;
     text-align: center;
+}
+
+.scrollable-container {
+    height: 100vh;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }

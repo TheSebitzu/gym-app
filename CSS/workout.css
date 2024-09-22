@@ -20,6 +20,9 @@ body {
     justify-content: center; 
     align-items: center;
     flex-grow: 1;
+    gap: 10px; /* Adjust the gap between buttons */
+    padding-bottom: 60px; /* Ensure space for the bottom buttons */
+    
 }
 
 button {
@@ -62,4 +65,10 @@ button:hover {
 p {
     margin: 20px 0;
     text-align: center;
+}
+
+.scrollable-container {
+    height: 100vh;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
