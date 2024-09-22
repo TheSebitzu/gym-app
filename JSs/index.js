@@ -1,3 +1,4 @@
+const CACHE_NAME = 'gym-app-cache';
 if (localStorage.workouts === undefined) {
     reset();
 }
@@ -17,4 +18,9 @@ function reset() {
     console.log("SALUT SIMPLU");
 };
 
+function resetCache() {
+    caches.delete(CACHE_NAME);
+    location.reload();
+    console.log("CACHE RESET");
+}
 
