@@ -8,9 +8,18 @@ let key = worknum + ".ex" + nr_ex;
 let keyMaxKg = key + ".maxkg";
 let keyMaxReps = key + ".maxreps";
 
-
-document.getElementById("maxkg").textContent = "Previous max weight: " + localStorage.getItem(keyMaxKg);
-document.getElementById("maxreps").textContent = "Previous max reps: " + localStorage.getItem(keyMaxReps);
+if (localStorage.getItem(keyMaxKg) === null || localStorage.getItem(keyMaxKg) === "-1") {
+    document.getElementById("maxkg").textContent = "Have a nice first workout";
+}
+else {
+    document.getElementById("maxkg").textContent = "Previous max weight: " + localStorage.getItem(keyMaxKg);
+}
+if (localStorage.getItem(keyMaxReps) === null || localStorage.getItem(keyMaxReps) === "-1") {
+    document.getElementById("maxreps").textContent = "Have a nice first workout";
+}
+else {
+    document.getElementById("maxreps").textContent = "Previous max reps: " + localStorage.getItem(keyMaxReps);
+}
 
 
 if (localStorage.getItem(keyMaxKg) === null) {
