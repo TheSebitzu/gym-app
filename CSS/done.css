@@ -14,7 +14,6 @@ html {
     background-color: #121212; 
     color: #e0e0e0; 
     flex-direction: column;
-    min-height: 100vh;
 }
 
 .container {
@@ -24,7 +23,6 @@ html {
     align-items: center;
     height: 100%;
     width: 100%;
-    margin-top: auto;
     text-align: center;
 }
 
@@ -67,7 +65,7 @@ button {
     border: none;
     border-radius: 5px;
     text-align: center;
-    font-size: 2rem; 
+    font-size: 1.5rem; /* Reduced font size */
     cursor: pointer;
 }
 
@@ -76,16 +74,16 @@ button:hover {
 }
 
 #button {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 20px; 
 }
 
 #button button {
-    font-size: 10vw;
-    padding: 3vh 6vw;
+    font-size: 5vw; /* Reduced font size */
+    padding: 2vh 4vw; /* Reduced padding */
 }
 
 input {
@@ -108,7 +106,7 @@ input {
     }
 
     #button button {
-        font-size: 5vw;
-        padding: 2vh 4vw;
+        font-size: 3vw; /* Reduced font size */
+        padding: 1vh 2vw; /* Reduced padding */
     }
 }
