@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/ex_history.css">
+    <link rel="manifest" href="../manifest.json">
+    <title>Document</title>
+</head>
+
+<body>
+    <table id="treadmillTable">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Speed</th>
+                <th>Incline</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+    <script>
+        const treadmillData = JSON.parse(localStorage.getItem('treadmill'));
+
+        const tableBody = document.getElementById('treadmillTable').getElementsByTagName('tbody')[0];
+
+        treadmillData.forEach(entry => {
+            const row = document.createElement('tr');
+
+
+            const timeCell = document.createElement('td');
+            timeCell.textContent = entry.time;
+            row.appendChild(timeCell);
+
+            const speedCell = document.createElement('td');
+            speedCell.textContent = entry.speed;
+            row.appendChild(speedCell);
+
+            const inclineCell = document.createElement('td');
+            inclineCell.textContent = entry.incline;
+            row.appendChild(inclineCell);
+
+            tableBody.appendChild(row);
+        });
+    </script>
+</body>
+
+</html>

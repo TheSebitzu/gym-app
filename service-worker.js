@@ -25,6 +25,7 @@ const urlsToCache = [
   './HTMLs/history.html',
   './HTMLs/workout.html',
   './HTMLs/reset.html',
+  './HTMLs/treadmill_history.html',
   './HTMLs/workouts/legs1/legs1.html',
   './HTMLs/workouts/legs1/exercises/ex1.html',
   './HTMLs/workouts/legs1/exercises/ex2.html',
@@ -33,6 +34,7 @@ const urlsToCache = [
   './HTMLs/workouts/legs1/exercises/ex5.html',
   './HTMLs/workouts/legs1/exercises/ex6.html',
   './HTMLs/workouts/legs1/exercises/ex7.html',
+  './HTMLs/workouts/legs1/exercises/treadmill.html',
   './HTMLs/workouts/legs1/warmup/warmup1.html',
   './HTMLs/workouts/legs1/warmup/warmup2.html',
   './HTMLs/workouts/legs1/warmup/warmup3.html',
@@ -48,6 +50,7 @@ const urlsToCache = [
   './HTMLs/workouts/legs2/exercises/ex6.html',
   './HTMLs/workouts/legs2/exercises/ex7.html',
   './HTMLs/workouts/legs2/exercises/ex8.html',
+  './HTMLs/workouts/legs2/exercises/treadmill.html',
   './HTMLs/workouts/legs2/warmup/warmup1.html',
   './HTMLs/workouts/legs2/warmup/warmup2.html',
   './HTMLs/workouts/legs2/warmup/warmup3.html',
@@ -62,6 +65,7 @@ const urlsToCache = [
   './HTMLs/workouts/pull1/exercises/ex5.html',
   './HTMLs/workouts/pull1/exercises/ex6.html',
   './HTMLs/workouts/pull1/exercises/ex7.html',
+  './HTMLs/workouts/pull1/exercises/treadmill.html',
   './HTMLs/workouts/pull1/warmup/warmup1.html',
   './HTMLs/workouts/pull1/warmup/warmup2.html',
   './HTMLs/workouts/pull1/warmup/warmup3.html',
@@ -74,6 +78,7 @@ const urlsToCache = [
   './HTMLs/workouts/pull2/exercises/ex5.html',
   './HTMLs/workouts/pull2/exercises/ex6.html',
   './HTMLs/workouts/pull2/exercises/ex7.html',
+  './HTMLs/workouts/pull2/exercises/treadmill.html',
   './HTMLs/workouts/pull2/warmup/warmup1.html',
   './HTMLs/workouts/pull2/warmup/warmup2.html',
   './HTMLs/workouts/pull2/warmup/warmup3.html',
@@ -85,6 +90,7 @@ const urlsToCache = [
   './HTMLs/workouts/push1/exercises/ex5.html',
   './HTMLs/workouts/push1/exercises/ex6.html',
   './HTMLs/workouts/push1/exercises/ex7.html',
+  './HTMLs/workouts/push1/exercises/treadmill.html',
   './HTMLs/workouts/push1/warmup/warmup1.html',
   './HTMLs/workouts/push1/warmup/warmup2.html',
   './HTMLs/workouts/push1/warmup/warmup3.html',
@@ -97,11 +103,12 @@ const urlsToCache = [
   './HTMLs/workouts/push2/exercises/ex5.html',
   './HTMLs/workouts/push2/exercises/ex6.html',
   './HTMLs/workouts/push2/exercises/ex7.html',
+  './HTMLs/workouts/push2/exercises/treadmill.html',
   './HTMLs/workouts/push2/warmup/warmup1.html',
   './HTMLs/workouts/push2/warmup/warmup2.html',
   './HTMLs/workouts/push2/warmup/warmup3.html',
   './images/icon-192x192.png',
-  './images/icon-512x512.png'
+  './images/icon-512x512.png' 
 ];
 
 self.addEventListener('fetch', event => {
