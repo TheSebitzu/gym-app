@@ -15,8 +15,9 @@
     </p>
 
     <video width="350" height="200" autoplay loop muted playsinline>
-        <source src="../../../../videos/walking_lounge.mov">
+        <source src="../../../../videos_mp4/walking_lounge.mp4">
     </video>
+    <p id="skipped_text"></p>
 
     <p id="maxkg">
         Previous max weight:
@@ -24,7 +25,7 @@
     <p id="maxreps">
         Previous max reps:
     </p>
-
+    <p>Next exercise: Lying leg curl</p>
     <br>
     <label for="weight">Weight:</label>
     <input type="number" id="weight" name="weight">
@@ -33,13 +34,18 @@
     <input type="number" id="reps" name="reps">
     <div class="container">
     <p>
-        <a href="../../../../HTMLs/workouts/legs1/exercises/ex4.html">
-            <button onclick="save()">Next</button>
+        <a href="../../../../HTMLs/workouts/legs1/exercises/ex4.html" onclick="return save();">
+            <button>Next</button>
         </a>
     </p>
     <p>
         <a href="../../../../HTMLs/workouts/legs1/exercises/ex2.html">
             <button>Previous</button>
+        </a>
+    </p>
+    <p>
+        <a href="../../../../HTMLs/workouts/legs1/exercises/ex4.html">
+            <button onclick="save2()">Skip</button>
         </a>
     </p>
     </div>

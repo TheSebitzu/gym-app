@@ -15,16 +15,16 @@
     </p>
 
     <video width="350" height="200" autoplay loop muted playsinline>
-        <source src="../../../../videos/reverse_pec_deck.mov">
+        <source src="../../../../videos_mp4/reverse_pec_deck.mp4">
     </video>
-
+    <p id="skipped_text"></p>
     <p id="maxkg">
         Previous max weight:
     </p>
     <p id="maxreps">
         Previous max reps:
     </p>
-
+    <p>Next exercise: Incline db curl</p>
     <br>
     <label for="weight">Weight:</label>
     <input type="number" id="weight" name="weight">
@@ -34,13 +34,18 @@
 
     <div class="container">
     <p>
-        <a href="../../../../HTMLs/workouts/pull2/exercises/ex6.html">
-            <button onclick="save()">Next</button>
+        <a href="../../../../HTMLs/workouts/pull2/exercises/ex6.html" onclick="return save();">
+            <button>Next</button>
         </a>
     </p>
     <p>
         <a href="../../../../HTMLs/workouts/pull2/exercises/ex4.html">
             <button>Previous</button>
+        </a>
+    </p>
+    <p>
+        <a href="../../../../HTMLs/workouts/pull2/exercises/ex6.html">
+            <button onclick="save2()">Skip</button>
         </a>
     </p>
     </div>

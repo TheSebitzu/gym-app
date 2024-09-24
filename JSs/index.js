@@ -15,12 +15,10 @@ function reset() {
         "legs2": []
     };
     localStorage.workouts = JSON.stringify(workouts);
-    console.log("SALUT SIMPLU");
 };
 
 function resetCache() {
     caches.delete(CACHE_NAME);
     location.reload();
-    console.log("CACHE RESET");
 }
 

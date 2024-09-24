@@ -15,9 +15,9 @@
     </p>
 
     <video width="350" height="200" autoplay loop muted playsinline>
-        <source src="../../../../videos/wrist_curls.mov">
+        <source src="../../../../videos_mp4/wrist_curls.mp4">
     </video>
-
+    <p id="skipped_text"></p>
     <p id="maxkg">
         Previous max weight:
     </p>
@@ -34,13 +34,18 @@
 
     <div class="container">
     <p>
-        <a href="../../../../HTMLs/workouts/pull2/exercises/treadmill.html">
-            <button onclick="save()">Next</button>
+        <a href="../../../../HTMLs/workouts/pull2/exercises/treadmill.html" onclick="return save();">
+            <button>Go to treadmill</button>
         </a>
     </p>
     <p>
         <a href="../../../../HTMLs/workouts/pull2/exercises/ex6.html">
             <button>Previous</button>
+        </a>
+    </p>
+    <p>
+        <a href="../../../../HTMLs/workouts/pull2/exercises/treadmill.html">
+            <button onclick="save2()">Skip</button>
         </a>
     </p>
     </div>

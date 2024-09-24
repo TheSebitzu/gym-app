@@ -53,7 +53,7 @@ const exerciseNameMapping = {
     pull2: {
         "ex1": "1 Arm Half-Kneeling Lat Pulldown",
         "ex2": "Pull-Ups",
-        "ex3": "Single Arm Cable Row",
+        "ex3": "Cable Row",
         "ex4": "Barbell Shrugs",
         "ex5": "Reverse Pec Deck",
         "ex6": "Incline DB Curl",

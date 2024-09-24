@@ -13,17 +13,17 @@
     <p>
         Hip thrusts<br>2 sets * 8 reps
     </p>
-
     <video width="350" height="200" autoplay loop muted playsinline>
-        <source src="../../../../videos/hip_thrusts.mov">
+        <source src="../../../../videos_mp4/hip_thrusts.mp4">
     </video>
-
+    <p id="skipped_text"></p>
     <p id="maxkg">
         Previous max weight:
     </p>
     <p id="maxreps">
         Previous max reps:
     </p>
+    <p>Next exercise: Leg press</p>
 
     <br>
     <label for="weight">Weight (per side):</label>
@@ -33,13 +33,18 @@
     <input type="number" id="reps" name="reps">
     <div class="container">
     <p>
-        <a href="../../../../HTMLs/workouts/legs2/exercises/ex3.html">
-            <button onclick="save()">Next</button>
+        <a href="../../../../HTMLs/workouts/legs2/exercises/ex3.html" onclick="return save();">
+            <button>Next</button>
         </a>
     </p>
     <p>
         <a href="../../../../HTMLs/workouts/legs2/exercises/ex1.html">
             <button>Previous</button>
+        </a>
+    </p>
+    <p>
+        <a href="../../../../HTMLs/workouts/legs2/exercises/ex3.html">
+            <button onclick="save2()">Skip</button>
         </a>
     </p>
     </div>
