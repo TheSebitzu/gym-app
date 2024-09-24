@@ -18,23 +18,23 @@
         <source src="../../../../videos_mp4/treadmill.mp4">
     </video>
 
-    <p id="maxkg">
-        Previous max weight:
-    </p>
-    <p id="maxreps">
-        Previous max reps:
-    </p>
+    <p></p>
+    <p></p>
+    <p></p>
 
     <br>
-    <label for="weight">Weight:</label>
-    <input type="number" id="weight" name="weight">
+    <label for="time">Time (in minutes):</label>
+    <input type="number" id="time" name="weight">
     <br>
-    <label for="reps">Reps:</label>
-    <input type="number" id="reps" name="reps">
+    <label for="speed">Speed:</label>
+    <input type="number" id="speed" name="reps">
+    <br>
+    <label for="incline">Incline:</label>
+    <input type="number" id="incline" name="reps">  
     <div class="container">
     <p>
         <a href="../../../../HTMLs/done.html">
-            <button>Finish</button>
+            <button onclick="save_treadmill()">Finish</button>
         </a>
     </p>
     <p>
@@ -43,9 +43,6 @@
         </a>
     </p>
     </div>
-    <script>
-        var nr_ex = 8;
-    </script>
     <script src="../../../../JSs/treadmill.js"></script>
 </body>
 
